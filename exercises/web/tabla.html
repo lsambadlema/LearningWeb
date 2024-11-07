@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAFIT - Horario de Clases</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #1a3d66; 
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #1a3d66;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #1a3d66;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+
+        tr:hover {
+            background-color: #e2e2e2;
+        }
+
+        #reserva-clase {
+            margin-top: 30px;
+        }
+
+        #reserva-clase h2 {
+            color: #1a3d66;
+            font-size: 24px;
+             }
+
+        #reserva-clase p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        #reserva-clase a {
+            padding: 10px 20px;
+            background-color: #f76c6c; 
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        #reserva-clase a:hover {
+            background-color: #e65c5c;
+        }
+
+        footer {
+            background-color: #1a3d66;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Horarios de Clases</h1>
+        <nav>
+            <a href="/exercises/web/index.html" target="_blank" rel="noopener noreferrer">Inicio</a>
+            <a href="/exercises/web/tabla.html">Horarios de clases</a>
+            <a href="/exercises/web/contacto.html" target="_blank" rel="noopener noreferrer">Contacto</a>
+            <a href="/exercises/web/nosotros.html" target="_blank" rel="noopener noreferrer">Nosotros</a>
+            <a href="/exercises/web/reservar-clase.html" target="_blank" rel="noopener noreferrer">Clase de prueba</a>
+
+        </nav>
+    </header>
+    <section id="Clases-semanales">
+        <h2>Clases Semanales</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Hora</th>
+                    <th>Clase</th>
+                    <th>Instructor</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>8:00-9:00</td>
+                    <td>Yoga</td>
+                    <td>Daniel Lema</td>
+                </tr>
+                <tr>
+                    <td>Lunes</td>
+                    <td>18:00-19:00</td>
+                    <td>Entrenamiento en grupo reducidos</td>
+                    <td>Damián Espasandín</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>9:00 - 10:00</td>
+                    <td>Spinning</td>
+                    <td>Manuel París Rey</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>17:00 - 18:00</td>
+                    <td>Pilates</td>
+                    <td>Grepcy Mayo Sánchez</td>
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                    <td>8:00 - 9:00</td>
+                    <td>Yoga</td>
+                    <td>Daniel Lema</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>18:00 - 19:00</td>
+                    <td>HIIT</td>
+                    <td>Diego Cespón Blanco</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>10:00 - 11:00</td>
+                    <td>Entrenamiento Funcional</td>
+                    <td>Damian Espasandin</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <section id="reserva-clase">
+        <h2>Reserva ya tu clase!</h2>
+
+        <p>¿Quieres probar una clase sin compromiso? Reserva tu primera clase completamente gratis. ¡No te lo pierdas!</p>
+        <a href="/exercises/web/reservar-clase.html" target="_blank" rel="noopener noreferrer">Reserva ahora</a>
+
+    </section>
+
+    <footer>
+        <p>DAFIT Gym &copy; 2023. Todos los derechos reservados.</p>
+        <p>
+            Dirección: Rúa Estatuto de Autonomía de Galicia, 22, 15270 Cee, A Coruña | Teléfono: 627 86 99 51 |
+            <a href="mailto:info@dafitgym.com">info@dafitgym.com</a>
+        </p>
+        <p>
+            Síguenos en:
+            <a href="https://www.facebook.com/dafitcentrodeentrenamiento/?locale=gl_ES" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com/dafit_ep/" target="_blank">Instagram</a> |
+        </p>
+    </footer>
+    </body>
+    
+    </html>
+</body>
+</html>

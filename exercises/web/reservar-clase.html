@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAFIT-Reserva de Clase</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+#Reserva-clase {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#Reserva-clase p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="apellidos"],
+input[type="email"],
+input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #003366;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #0055a5;
+}
+    </style>
+
+</head>
+<body>z
+    <header>
+        <h1>Reserva tu clase en DAFIT</h1>
+        <nav>
+            <a href="/exercises/web/index.html" target="_blank" rel="noopener noreferrer">Inicio</a>
+            <a href="/exercises/web/tabla.html" target="_blank" rel="noopener noreferrer">Horarios de clases</a>
+            <a href="/exercises/web/contacto.html" target="_blank" rel="noopener noreferrer">Contacto</a>
+            <a href="/exercises/web/nosotros.html" target="_blank" rel="noopener noreferrer">Nosotros</a>
+            <a href="/exercises/web/reservar-clase.html">Clase de prueba</a>
+        </nav>
+    </header>
+
+
+    <section id="Reserva-clase">
+        <h2>Reserva tu clase:</h2>
+        <p>Rellena el formulario para reservar tu clase de prueba totalmente gratuita en DAFIT. ¡Asegúrate de elegir la clase correcta y el día que deseas
+            asistir!</p>
+
+    <form>
+
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required placeholder="Introduce tu nombre">
+        
+        <label for="apellidos">Apellidos:</label>
+        <input type="apellidos" id="apellidos" name="apellidos" required placeholder="Introduce tus apellidos">
+
+        <label for="user_email">Introduce tu email: </label> 
+        <input type="email" placeholder="Introduce tu email" name="user_email">
+        <br />
+        
+        <label for="clase">Selecciona la clase:</label><br>
+        <input type="radio" id="yoga" name="clase" value="Yoga" required>
+        <label for="yoga">Yoga</label><br>
+        
+        <input type="radio" id="spinning" name="clase" value="Spinning">
+        <label for="spinning">Spinning</label><br>
+        
+        <input type="radio" id="entrenamiento_funcional" name="clase" value="Entrenamiento Funcional">
+        <label for="entrenamiento_funcional">Entrenamiento Funcional</label><br>
+        
+        <input type="radio" id="pilates" name="clase" value="Pilates">
+        <label for="pilates">Pilates</label><br>
+        
+        <label for="fecha">Selecciona el día de la clase:</label>
+        <input type="date" id="fecha" name="fecha" required>
+        
+        <input type="submit" value="Reservar clase">
+
+    </form>
+
+    </section>
+    
+</body>
+</html>
